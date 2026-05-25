@@ -7,3 +7,11 @@ stock_dic = {
     'NVDA' : 600,
     'TSLA' : 700
 }
+
+def stock_tracker():
+    #Get data from user
+    stock_name = input("Please enter the stock name: ").upper()
+    stock_quantity = input("Please enter the invested stock quantity: ")
+
+    #Converts quantity into integer
+    stock_quantity = int(stock_quantity)
