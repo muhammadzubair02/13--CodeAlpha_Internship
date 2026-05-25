@@ -23,3 +23,15 @@ def stock_tracker():
         total_investment = stock_price * stock_quantity 
         print("Your total investment value: ", total_investment)
 
+
+        #Save the data in txt. file (File Handling)
+        file = open("portfolio.txt", "a")
+        file.write(f"Stock Name: {stock_name}\n")
+        file.write(f"Quantity: {stock_quantity}\n")
+        file.write(f"Stock Price: {stock_price}\n")
+        file.write(f"Total Investment: {total_investment}\n")
+        file.write("-----------------------------\n")
+        file.close()
+        print("Investment details saved in portfolio.txt")
+
+
