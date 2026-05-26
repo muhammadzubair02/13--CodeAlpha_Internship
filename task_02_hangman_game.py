@@ -1,6 +1,6 @@
 import random
 
-country =['pakistan', 'china', 'rusia', 'india', 'iran']
+country =['pakistan', 'china', 'india', 'russia', 'iran']
 attempts = 6
 word = random.choice(country)
 word_len = len(word)
@@ -14,7 +14,7 @@ while "_" in display_dash and attempts > 0:
 
     #Check repeated guess
     if user_guess in guessed_letters:
-        print("⚠️ You already guessed this letter!")
+        print("You already guessed this letter!")
         attempts -= 1
         print("Attempts left:", attempts)
         continue
@@ -33,6 +33,6 @@ while "_" in display_dash and attempts > 0:
 
 #Display the result
 if "_" not in display_dash:
-    print("🎉 You guessed the word:", word)
+    print("You guessed the word:", word)
 else:
-    print("❌ Game Over! The word was:", word)
+    print("Game Over! The word was:", word)
