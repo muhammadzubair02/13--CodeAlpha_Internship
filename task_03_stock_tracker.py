@@ -34,4 +34,10 @@ def stock_tracker():
         file.close()
         print("Investment details saved in portfolio.txt")
 
+    else:
+        print("Your stock name", stock_name, "is not in record")
+
+#Calling Function
+stock_tracker()
+
 

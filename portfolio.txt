@@ -1,0 +1,5 @@
+Stock Name: META
+Quantity: 500
+Stock Price: 500
+Total Investment: 250000
+-----------------------------
